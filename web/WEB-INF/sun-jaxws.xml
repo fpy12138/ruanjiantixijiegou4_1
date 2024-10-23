@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime' version='2.0'>
+
+    <!-- 注意这里： -->
+    <!-- implementation 必须对上你写的带@WebService的类的路径 -->
+    <!-- url-pattern 指定的就是这个 web service 的接口地址 -->
+    <!-- 例如：这个项目最终打包成 webservice.war，访问地址就是 http://localhost:8080/webservice/hello -->
+
+    <endpoint
+            name="Hello"
+            implementation="service.TaxCalculator"
+            url-pattern="/tax"/>
+
+</endpoints>
+
+
